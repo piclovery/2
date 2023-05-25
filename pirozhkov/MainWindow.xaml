@@ -1,0 +1,23 @@
+﻿<Window x:Class="pirozhkov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pirozhkov"
+        mc:Ignorable="d"
+        Title="ООО Столовые приборы" Height="720" Width="1280" Background="#FF76E383">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150" />
+            <RowDefinition />
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Frame Background="White" Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" ></Frame>
+        <Image Grid.Column="0" x:Name="ImageLogo" Source="Images/logo.png" HorizontalAlignment="Left" Margin="10">
+        </Image>
+        <Label Content="Столовые приборы" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FF498C51" FontSize="75"></Label>
+        <Button x:Name="BtnBack" Background="#FF498C51" FontFamily="Comic Sans MS"  Foreground="White" HorizontalAlignment="Right" Margin="50" 
+                VerticalAlignment="Center" Height="60" Width="180" FontSize="20"  Content="Назад" Click="BtnBack_Click" Grid.Row="2"/>
+
+    </Grid>
+</Window>
